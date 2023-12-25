@@ -1,0 +1,205 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+/* Start profile page */
+@media (max-width: 767px) {
+    .profile-page .overview {
+     flex-direction: column;
+    }
+ }
+ .profile-page .avatar-box {
+     width: 300px;
+ }
+ @media (min-width: 768px) {
+     .profile-page .avatar-box {
+         border-right: 1px solid #eee;
+     }
+ }
+ .profile-page {
+    margin: 60px 20px 0;
+ }
+ .profile-page .avatar-box > img{
+     width: 120px;
+     height: 120px;
+ }
+
+ .profile-page .avatar-box .edit {
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    margin: 40px auto 0;
+    color: var(--blue-color);
+    transition: .3s;
+ }
+ .profile-page .avatar-box .no {
+    display: none;
+    margin: 40px auto 0;
+ }
+ .profile-page .avatar-box .edit:hover {
+    color: var(--blue-alt-color);
+ }
+ .profile-page .info-box .box {
+     flex-wrap: wrap;
+     border-bottom: 1px solid #eee;
+     transition: 0.3s;
+ }
+ .profile-page .info-box .box:hover {
+     background-color: #f9f9f9;
+ }
+ .profile-page .info-box .box > div {
+     min-width: 320px;
+     padding: 10px 0 0;
+ }
+ .profile-page .info-box .box > div input {
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    background-color: transparent;
+ }
+ .profile-page .info-box .box > div a {
+    position: relative;
+    transition: .3s;
+ }
+ .profile-page .info-box .box > div a::before {
+    position: absolute;
+    content: "Change Password";
+    top: -25px;
+    width: 120px;
+    display: none;
+    left: 0;
+ }
+ .profile-page .info-box .box > div a:hover::before {
+    display: block;
+ }
+ .profile-page .info-box .box h4 {
+     font-weight: normal;
+ }
+ /* End profile page */
+ /* Start profile page Toggle */
+ .profile-page .info-box .toggle-switch {
+     height: 20px;
+ }
+   @media (max-width: 767px) {
+     .profile-page .info-box .toggle-switch {
+       margin: auto;
+     }
+     .profile-page .info-box .box > div {
+        min-width: 100%;
+    }
+ }
+   .profile-page .info-box .toggle-switch::before {
+     width: 12px;
+     height: 12px;
+     font-size: 8px; 
+ }
+   .profile-page .info-box .toggle-checkbox:checked + .toggle-switch::before {
+     left: 62px;
+ }
+ /* End profile page Toggle */
+ /* Start profile-page */
+ @media (max-width: 767px) {
+     .profile-page .other-data {
+         flex-direction: column;
+     }
+ }
+ .profile-page .skills-card {
+     flex-grow: 1;
+ }
+ .profile-page .skills-card ul li {
+     padding: 15px 0;
+ }
+ .profile-page .skills-card ul li:not(:last-child) {
+     border-bottom: 1px solid #eee;
+ }
+ .profile-page .skills-card ul li span {
+     display: inline-flex;
+     padding: 4px 10px;
+     background-color: #eee;
+     border-radius: 6px;
+     font-size: 14px;
+ }
+ .profile-page .skills-card ul li span:not(:last-child) {
+     margin-right: 5px;
+ }
+ .profile-page .activities {
+     flex-grow: 2;
+ }
+ .profile-page .activities .activity:not(:last-of-type) {
+     border-bottom: 1px solid #eee;
+     padding-bottom: 20px;
+     margin-bottom: 20px;
+ }
+ .profile-page .activities img {
+     width: 64px;
+     height: 64px;
+     border-radius: 50%;
+     margin-right: 10px;
+ }
+ @media (min-width: 768px) {   
+     .profile-page .activities .data {
+         margin-left: auto;
+         text-align: right;
+     }
+ }
+ @media (max-width: 767px) {   
+     .profile-page .activity {
+         flex-direction: column;
+     }
+     .profile-page .activity img {
+         margin-right: 0;
+         margin-bottom: 15px;
+     }
+     .profile-page .activity .data {
+         margin-top: 15px;
+     }
+ }
+ /* End profile-page */
+ .toggle-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+.toggle-switch {
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toggle-switch::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+    background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+    content: "\f00c";
+    left: 50px;
+    color: var(--blue-color);
+}
+.settings-page :disabled {
+    cursor: no-drop;
+    background-color: #f0f4f8;
+    color: #bbb;
+}

@@ -1,0 +1,130 @@
+:root {
+    --main-color: #fff;
+    --f-blue-color: #003b95;
+    --s-blue-color: #49BEFF;
+    --gray-color: #F6F9FC;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--f-blue-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--s-blue-color);
+}
+body {
+    background-color: var(--main-color);
+}
+/* Start Header  */
+.nav-one {
+    background-color: var(--f-blue-color) !important;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+.nav-one .navbar-toggler {
+    background-color: var(--main-color);
+}
+.nav-one .navbar-toggler:focus {
+    box-shadow: none;
+}
+.nav-one a.links {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 22px;
+}
+.nav-one a.links img {
+    width: 60px;
+    border-radius: 50%;
+}
+.nav-one .navbar-collapse {
+    flex-grow: 0;
+}
+.nav-one .navbar-collapse .navbar-nav {
+    gap: 16px;
+    margin-bottom: 0 !important;
+    flex-direction: row;
+}
+.nav-one .navbar-collapse .navbar-nav a {
+    color: gray;
+    background-color: var(--main-color);
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: .3s;
+    cursor: pointer;
+}
+.nav-one .navbar-collapse .navbar-nav a:hover {
+    opacity: .9;
+}
+@media (max-width: 991px) {
+    .nav-one .navbar-collapse {
+        flex-basis: 0;
+    }
+}
+/* Start Nav Two */
+.nav-two {
+    padding-bottom: 20px;
+}
+.nav-two .navbar-collapse {
+    flex-basis: 100%;
+}
+.nav-two .navbar-toggler {
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+.nav-two .navbar-collapse .nav-me li a{
+    background-color: transparent;
+    color: var(--main-color);
+    padding: 6px 14px;
+    border-radius: 22px;
+    transition: .3s;
+}
+.nav-two .navbar-collapse .nav-me li a.active {
+    border: 1px solid var(--main-color);
+    
+}
+.nav-two .navbar-collapse .nav-me li a svg{
+    margin-right: 6px;
+}
+@media (max-width: 991px) {
+    .nav-one .navbar-collapse .nav-me {
+        flex-direction: column;
+    }
+}
+.nav-one .navbar-collapse .nav-me a:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.176);
+}
+.nav-one .navbar-collapse .nav-me a:hover {
+    opacity: 1;
+} 
+/* End Nav Two */
+/* End Header  */
+/* Start Scroll */
+.scroll {
+    position: fixed;
+    right: 0;
+    padding: 6px 16px;
+    background-color: var(--f-blue-color);
+    cursor: pointer;
+    border-radius: 6px;
+    color: var(--main-color);
+    margin-right: 12px;
+    transition: opacity .4s;
+    bottom: 10px;
+    display: none;
+}
+.scroll:hover {
+    opacity: .9;
+}
+/* End Scroll */
