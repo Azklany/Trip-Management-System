@@ -1,0 +1,38 @@
+/* Start City Hotels */
+.CityHotels {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.CityHotels h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.CityHotels .topcityhotels .HotelLink {
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+.CityHotels .topcityhotels .HotelLink img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: .5s;
+}
+.CityHotels .topcityhotels .HotelLink img:hover {
+    transform: scale(1.1);
+}
+.CityHotels .topcityhotels .HotelLink .HotelDescription {
+    padding: 10px 14px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+}
+.CityHotels .topcityhotels .HotelLink .HotelDescription h3 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+    margin-bottom: 5;
+}
+.CityHotels .topcityhotels .HotelLink .HotelDescription .Stars svg {
+    font-size: 16px;
+    color: #f59e0b;
+}
+/* End City Hotels */

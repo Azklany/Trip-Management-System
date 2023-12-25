@@ -1,0 +1,538 @@
+:root {
+    --main-color: #fff;
+    --f-blue-color: #003b95;
+    --s-blue-color: #49BEFF;
+    --gray-color: #F6F9FC;
+}
+/* Start Flights Left */
+.flights {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.flights .left {
+    padding: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 3px #d0d0d0;
+    margin-bottom: 20px;
+}
+.flights .left h2 {
+    margin: 0;
+    padding: 10px 18px;
+    font-size: 22px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+.left .hotels {
+    padding: 10px 20px;
+}
+.left .hotels .box-one ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.left .hotels .box-one ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.left .hotels .box-one ul li a {
+    text-decoration: none;
+    color: var(--f-blue-color);
+    transition: opacity .4s;
+}
+.left .hotels .box-one ul li a:hover {
+    opacity: .6;
+}
+.left .hotels .box-one ul li span {
+    opacity: .7;
+}
+.mid {
+    position: relative;
+    margin-bottom: 20px;
+}
+.mid::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #efe8e87a;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* End Flights Left */
+/* Start Flights Right */
+.flights .right {
+    background-color: #f7f7f7;
+    padding: 0px;
+    border-radius: 6px;
+    box-shadow: rgb(208 208 208) 0px 0px 3px;
+    margin-bottom: 20px;
+}
+.flights .right .row {
+    margin-left:  0% !important;
+    margin-right: 0%  !important;
+}
+.flights .right .page {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.flights .right .page .fli {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.flights .right .page .fli a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 500;
+    width: 33.33333%;
+    background-color: var(--f-blue-color);
+    display: block;
+    padding: 12px;
+    cursor: pointer;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+@media (max-width: 991px) {
+.flights .right .page .fli {
+  flex-direction: column;
+}
+.flights .right .page .fli a {
+    width: 100%;
+}
+}
+.right .page .fli a.act {
+    background-color: var(--s-blue-color);
+    transition: background-color .4s;
+}
+.flights .right .page .fli a svg {
+    margin-right: 10px;
+}
+.flights .right form .radios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.flights .right form .radios label {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.flights .right form .radios [type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.flights .right form .radios [type="radio"], progress {
+    accent-color: var(--f-blue-color);
+}
+.right .fly .one,
+.right .fly .two,
+.right .fly .three,
+.right .fly .four,
+.right .fly .five,
+.right .fly .six,
+.right .fly .seven {
+    margin-bottom: 30px;
+}
+.right .fly .one label,
+.right .fly .two label,
+.right .fly .three label,
+.right .fly .four label,
+.right .fly .five label,
+.right .fly .six label,
+.right .fly .seven label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.right .fly .one input,
+.right .fly .two input,
+.right .fly .three input,
+.right .fly .four input,
+.right .fly .five select,
+.right .fly .six select,
+.right .fly .seven select {
+    outline: none;
+    border: none;
+    padding: 16px 10px;
+    width: 100%;
+    border-radius: 4px;
+    transition: .5s;
+    cursor: pointer;
+}
+.right .fly .save {
+    margin-bottom: 30px;
+}
+.right .fly .save input {
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    padding: 16px 10px;
+    width: 100%;
+    border-radius: 7px;
+    transition: .5s;
+    cursor: pointer;
+}
+.right .fly-2 {
+    display: none;
+}
+.right .fly-2 .one,
+.right .fly-2 .two,
+.right .fly-2 .three,
+.right .fly-2 .four,
+.right .fly-2 .five,
+.right .fly-2 .six,
+.right .fly-2 .seven {
+    margin-bottom: 30px;
+}
+.right .fly-2 .one label,
+.right .fly-2 .two label,
+.right .fly-2 .three label,
+.right .fly-2 .four label,
+.right .fly-2 .five label,
+.right .fly-2 .six label,
+.right .fly-2 .seven label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.right .fly-2 .one input,
+.right .fly-2 .two input,
+.right .fly-2 .three input,
+.right .fly-2 .four input,
+.right .fly-2 .five select,
+.right .fly-2 .six select,
+.right .fly-2 .seven select {
+    outline: none;
+    border: none;
+    padding: 16px 10px;
+    width: 100%;
+    border-radius: 4px;
+    transition: .5s;
+    cursor: pointer;
+}
+.right .fly-2 .three input {
+    width: 48%;
+}
+@media (max-width: 991px) {
+    .right .fly-2 .three input {
+        width: 100%;
+    } 
+}
+.right .fly-2 .save {
+    margin-bottom: 30px;
+}
+.right .fly-2 .save input {
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    padding: 16px 10px;
+    width: 100%;
+    border-radius: 7px;
+    transition: .5s;
+}
+.right .fly-3 {
+    display: none;
+}
+.right .fly-3 .one,
+.right .fly-3 .two,
+.right .fly-3 .three,
+.right .fly-3 .four,
+.right .fly-3 .five,
+.right .fly-3 .six,
+.right .fly-3 .seven {
+    margin-bottom: 10px;
+}
+.right .fly-3 .one label,
+.right .fly-3 .two label,
+.right .fly-3 .three label,
+.right .fly-3 .four label,
+.right .fly-3 .five label,
+.right .fly-3 .six label,
+.right .fly-3 .seven label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.right .fly-3 .one input,
+.right .fly-3 .two input,
+.right .fly-3 .three input,
+.right .fly-3 .four input,
+.right .fly-3 .five select,
+.right .fly-3 .six select,
+.right .fly-3 .seven select {
+    outline: none;
+    border: none;
+    padding: 10px 8px;
+    width: 100%;
+    border-radius: 4px;
+    transition: .5s;
+    cursor: pointer;
+}
+.right .fly-3 .save {
+    margin-bottom: 15px;
+}
+.right .fly-3 .save input {
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    padding: 10px 8px;
+    width: 100%;
+    border-radius: 7px;
+    transition: .5s;
+    cursor: pointer;
+}
+.right .fly-4 {
+    display: none;
+}
+.right .fly-4 .one,
+.right .fly-4 .two,
+.right .fly-4 .three,
+.right .fly-4 .four,
+.right .fly-4 .five,
+.right .fly-4 .six,
+.right .fly-4 .seven {
+    margin-bottom: 10px;
+}
+.right .fly-4 .one label,
+.right .fly-4 .two label,
+.right .fly-4 .three label,
+.right .fly-4 .four label,
+.right .fly-4 .five label,
+.right .fly-4 .six label,
+.right .fly-4 .seven label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.right .fly-4 .one input,
+.right .fly-4 .two input,
+.right .fly-4 .three input,
+.right .fly-4 .four input,
+.right .fly-4 .five select,
+.right .fly-4 .six select,
+.right .fly-4 .seven select {
+    outline: none;
+    border: none;
+    padding: 10px 8px;
+    width: 100%;
+    border-radius: 4px;
+    transition: .5s;
+    cursor: pointer;
+}
+.right .fly-4 .save {
+    margin-bottom: 15px;
+}
+.right .fly-4 .save input {
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    padding: 10px 8px;
+    width: 100%;
+    border-radius: 7px;
+    transition: .5s;
+    cursor: pointer;
+}
+.right .all-two {
+    display: none;
+}
+.right .hot .one,
+.right .hot .two,
+.right .hot .three,
+.right .hot .four,
+.right .hot .five,
+.right .hot .six,
+.right .hot .seven {
+    margin-bottom: 30px;
+    padding: 0 24px;
+}
+.right .hot .one label,
+.right .hot .two label,
+.right .hot .three label,
+.right .hot .four label,
+.right .hot .five label,
+.right .hot .six label,
+.right .hot .seven label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.right .hot .one input,
+.right .hot .two input,
+.right .hot .three input,
+.right .hot .four input,
+.right .hot .five select,
+.right .hot .six select,
+.right .hot .seven select {
+    outline: none;
+    border: none;
+    padding: 16px 10px;
+    width: 100%;
+    border-radius: 4px;
+    transition: .5s;
+    cursor: pointer;
+}
+.right .hot .one input {
+    width: 46%;
+}
+@media (max-width: 991px) {
+    .right .hot .one input {
+        width: 100%;
+    } 
+}
+.right .hot .save {
+    margin-bottom: 30px;
+}
+.right .hot .save input {
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    padding: 16px 10px;
+    width: 100%;
+    border-radius: 7px;
+    transition: .5s;
+    cursor: pointer;
+}
+.right .all-three {
+    display: none;
+}
+.right .hotfly .one,
+.right .hotfly .two,
+.right .hotfly .three,
+.right .hotfly .four,
+.right .hotfly .fours,
+.right .hotfly .five,
+.right .hotfly .six,
+.right .hotfly .seven {
+    margin-bottom: 30px;
+    padding: 0 24px;
+}
+.right .hotfly .one label,
+.right .hotfly .two label,
+.right .hotfly .three label,
+.right .hotfly .four label,
+.right .hotfly .fours label,
+.right .hotfly .five label,
+.right .hotfly .six label,
+.right .hotfly .seven label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.right .hotfly .one input,
+.right .hotfly .two input,
+.right .hotfly .three input,
+.right .hotfly .four input,
+.right .hotfly .fours select,
+.right .hotfly .five select,
+.right .hotfly .six select,
+.right .hotfly .seven select {
+    outline: none;
+    border: none;
+    padding: 16px 10px;
+    width: 100%;
+    border-radius: 4px;
+    transition: .5s;
+    cursor: pointer;
+}
+.right .hotfly .fours select {
+    width: 46%;
+}
+@media (max-width: 991px) {
+    .right .hotfly .fours select {
+        width: 100%;
+    } 
+}
+.right .hotfly .save {
+    margin-bottom: 30px;
+}
+.right .hotfly .save input {
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    padding: 16px 10px;
+    width: 100%;
+    border-radius: 7px;
+    transition: .5s;
+    cursor: pointer;
+}
+.right .all-three .hotfly2 {
+    display: none;
+}
+.right .hotfly2 .one,
+.right .hotfly2 .two,
+.right .hotfly2 .three,
+.right .hotfly2 .fours,
+.right .hotfly2 .five,
+.right .hotfly2 .six,
+.right .hotfly2 .seven {
+    margin-bottom: 30px;
+    padding: 0 24px;
+}
+.right .hotfly2 .one label,
+.right .hotfly2 .two label,
+.right .hotfly2 .three label,
+.right .hotfly2 .fours label,
+.right .hotfly2 .five label,
+.right .hotfly2 .six label,
+.right .hotfly2 .seven label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.right .hotfly2 .one input,
+.right .hotfly2 .two input,
+.right .hotfly2 .three input,
+.right .hotfly2 .fours select,
+.right .hotfly2 .five select,
+.right .hotfly2 .six select,
+.right .hotfly2 .seven select {
+    outline: none;
+    border: none;
+    padding: 16px 10px;
+    width: 100%;
+    border-radius: 4px;
+    transition: .5s;
+    cursor: pointer;
+}
+.right .hotfly2 .fours select,
+.right .hotfly2 .three input
+ {
+    width: 46%;
+}
+@media (max-width: 991px) {
+    .right .hotfly2 .fours select {
+        width: 100%;
+    } 
+}
+.right .hotfly2 .save {
+    margin-bottom: 30px;
+}
+.right .hotfly2 .save input {
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    padding: 16px 10px;
+    width: 100%;
+    border-radius: 7px;
+    transition: .5s;
+    cursor: pointer;
+}
+/* End Flights Right */

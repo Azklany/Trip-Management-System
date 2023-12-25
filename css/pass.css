@@ -1,0 +1,81 @@
+.page-one .dod .stop .box-three .l-1 {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+} 
+.page-one .dod .stop .box-three .text {
+    width: 100%;
+    padding: 12px 18px;
+    color: #5A6A85;
+    border-radius: 7px;
+    border: 1px solid #DFE5EF;
+    margin-bottom: 18px;
+    transition: 0.3s;
+    outline: none;
+}
+.page-one .dod .stop .box-three .text:focus {
+    border-color: #aec3ff;
+}
+.page-one .dod .stop .box-three .l-3 {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;    
+}
+.page-one .dod .stop .box-three .em {
+    width: 100%;
+    padding: 12px 18px;
+    color: #5A6A85;
+    border-radius: 7px;
+    border: 1px solid #DFE5EF;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    outline: none;
+}
+.page-one .dod .stop .box-three .em:focus {
+    border-color: #aec3ff;
+}
+.page-one .dod .stop .box-three .l-2 {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+} 
+.page-one .dod .stop .box-three .pass {
+    width: 100%;
+    padding: 12px 18px;
+    color: #5A6A85;
+    border-radius: 7px;
+    border: 1px solid #DFE5EF;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    outline: none;
+}
+.page-one .dod .stop .box-three .pass:focus {
+    border-color: #aec3ff;
+} 
+.page-one .dod .stop .box-three .sub {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 18px;
+    border-radius: 7px;
+    font-size: 18px;
+    background-color: #539BFF;
+    color: white;
+    border: 1px solid #539BFF;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+} 
+.page-one .dod .stop .box-three .sub:hover {
+    background-color: #4784d9;
+}
+.page-one .dod .stop .box-three p {
+    text-align: center;
+    margin-bottom: 0;
+    color: gray;
+} 
+.page-one .dod .stop .box-three p a {
+    color: #539BFF;
+}

@@ -1,0 +1,95 @@
+/* Start Gallery */
+.gallerys {
+    padding-bottom: 18px;
+    padding-top: 40px;
+}
+.gallerys h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.gallerys .tophotels .photo {
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+.gallerys .tophotels .photo img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: .5s;
+}
+.gallerys .tophotels .photo img:hover {
+    transform: scale(1.1);
+}
+.gallerys .tophotels .photo .HotelName {
+    padding: 10px 14px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+}
+.gallerys .tophotels .photo .HotelName svg {
+    font-size: 16px;
+    margin-bottom: 7px;
+    color: #f59e0b;
+}
+.gallerys .tophotels .photo .HotelName h3 {
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.gallerys .tophotels .photo .HotelName h5 {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--f-blue-color);
+    opacity: .7;
+}
+/* End Gallery */
+/* Start Attractions  */
+.AttractionsPlaces {
+    margin-bottom: 40px;
+}
+.AttractionsPlaces h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.AttractionsPlaces h6 {
+    font-size: 18px;
+    opacity: .8;
+}
+.AttractionsPlaces .photo{
+    margin-bottom: 22px;
+    overflow: hidden;
+}
+.AttractionsPlaces .photo img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 4px;
+    transition: .5s;
+}
+.AttractionsPlaces .photo img:hover {
+    transform: scale(1.1);
+}
+.AttractionsPlaces .photo a{
+    text-decoration: none;
+    color: black;
+}
+.AttractionsPlaces .topplaces .placeName {
+    padding: 10px 14px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+}
+.AttractionsPlaces .topplaces .placeName h3 {
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.AttractionsPlaces .topplaces .placeName h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.AttractionsPlaces .photo h5{
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--f-blue-color);
+    opacity: .7;
+}
+/* End Attractions  */

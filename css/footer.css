@@ -1,0 +1,37 @@
+:root {
+  --dark-color: #19283f;
+  --green-color : #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color : #eff7fa;
+}
+/* Start Footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .info p {
+  width: 500px;
+}
+.footer .copyright > span {
+  color: var(--green-color);
+}
+.footer .copyright div span {
+  color: var(--yellow-color);
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .twitter {
+  background-color: #1da1f2;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
+.footer .youtube {
+  background-color: #ff0000;
+}
+/* End Footer */
